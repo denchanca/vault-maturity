@@ -1,87 +1,113 @@
-# vault-maturity
-Hashicorp Vault Maturity Assessment
-# Comprehensive Vault Maturity Assessment
+# Vault Maturity, Production Readiness, and Initial Hardening Assessment
 
-Welcome to the Comprehensive Vault Maturity Assessment. This tool is designed to help you evaluate your organization's current vault maturity level and provide you with recommendations for improvement.
-
-## Initial Data Gathering
-
-Please provide the following information about your organization:
-
-- **Company Size:** ( ) Small ( ) Medium ( ) Large
-- **Industry:** ( ) Finance ( ) Healthcare ( ) Technology ( ) Other: _______
-- **Current Secret Management Methods:** ( ) Manual ( ) Spreadsheet ( ) Encrypted Files ( ) Vault Solution
-- **Compliance Requirements:** ( ) PCI-DSS ( ) HIPAA ( ) GDPR ( ) Other: _______
-
-## Assessment Areas
-
-### Security
-- **Encryption:** Are secrets encrypted in transit and at rest?
-  - [ ] Yes
-  - [ ] No
-- **Authentication:** Is there multi-factor authentication?
-  - [ ] Yes
-  - [ ] No
+## Vault Maturity Assessment
 
 ### Secrets Management
-- **Rotation and Centralization:** How are secrets rotated, and is there centralized management?
-  - [ ] Manually
-  - [ ] Automatically
-  - [ ] Not applicable
+1. Describe the workflow for provisioning new secrets.
+   > Response:
+2. What types of secrets are stored in Vault, and how are they organized?
+   > Response:
+3. Detail how fine-grained access controls to secrets are defined and enforced.
+   > Response:
+4. Provide the procedure for automated secret rotation.
+   > Response:
+5. How are secrets management policies documented, approved, and enforced?
+   > Response:
+6. What is the incident response plan in the event of unauthorized access to a secret?
+   > Response:
 
-### Access Controls
-- **Policy Enforcement:** Are there fine-grained access policies in place?
-  - [ ] Yes
-  - [ ] No
+### Infrastructure as Code (IaC)
+7. Which IaC tools are used for managing Vault infrastructure, and why were they chosen?
+   > Response:
+8. Explain the process for making and approving changes to the IaC codebase.
+   > Response:
+9. How is the state of the Vault infrastructure managed and preserved?
+   > Response:
 
 ### Disaster Recovery
-- **Backup and Restoration:** Is there a plan for data backup and restoration?
-  - [ ] Yes
-  - [ ] No
+10. Outline the backup process for Vault.
+    > Response:
+11. When was the last disaster recovery drill performed, and what were the results?
+    > Response:
+12. What is your RTO for Vault, and how was it determined?
+    > Response:
 
-### Audit and Compliance
-- **Audit Logs:** Are there comprehensive audit logs?
-  - [ ] Yes
-  - [ ] No
-- **Standards Compliance:** Are you compliant with relevant standards?
-  - [ ] Fully Compliant
-  - [ ] Partially Compliant
-  - [ ] Not Compliant
+### High Availability and Scalability
+13. Describe the architecture of your high-availability Vault setup.
+    > Response:
+14. Detail any load testing performed to ensure Vault can handle peak loads.
+    > Response:
+15. What are the failover procedures for Vault, and how are they tested?
+    > Response:
 
-## Maturity Levels
+### Performance Monitoring
+16. What specific tools are used for Vault monitoring, and what metrics are collected?
+    > Response:
+17. Detail the alerting strategy for Vault. Who receives alerts and what is the response plan?
+    > Response:
+18. How were performance baselines established, and how often are they reviewed?
+    > Response:
 
-Based on your answers, determine your current maturity level:
+## Production Readiness Assessment
 
-- **Level 1 (Initial):** Manual processes, no formal secret management system.
-- **Level 2 (Managed):** Basic vault implementation, initial automation and policies.
-- **Level 3 (Defined):** Structured vault management, policy-driven access, and automated secret rotation.
-- **Level 4 (Quantitatively Managed):** Metrics-driven management, advanced automation, and fine-grained access controls.
-- **Level 5 (Optimizing):** Continuous improvement, integrated with CI/CD pipelines, and predictive analytics.
+### Installation and Configuration
+19. How do you manage version control of Vault configuration files?
+    > Response:
+20. How are secrets within the configuration files managed and rotated?
+    > Response:
 
-## Recommendations
+### Security Configuration
+21. Provide details on the ciphers, protocols, and certificates used for TLS.
+    > Response:
+22. How are ACLs structured and reviewed?
+    > Response:
 
-Based on your maturity level, consider the following steps to improve:
+### System Integration
+23. How is Vault integrated with existing identity management solutions?
+    > Response:
+24. Describe the mechanism services use to authenticate with Vault.
+    > Response:
 
-- **For Level 1 to Level 2:**
-  - Implement a basic vault solution to centralize secret management.
-  - Begin automating the rotation of secrets.
-- **For Level 2 to Level 3:**
-  - Establish systematic vault management with policy enforcement.
-  - Integrate vault solutions into your existing workflows for better automation.
-- **For Level 3 to Level 4:**
-  - Implement metrics to drive management decisions.
-  - Enhance automation and integrate with CI/CD pipelines.
-- **For Level 4 to Level 5:**
-  - Focus on continuous improvement strategies.
-  - Utilize predictive analytics to anticipate and mitigate risks.
+### Logging and Auditing
+25. Where are audit logs stored, and how is their integrity protected?
+    > Response:
+26. Can you provide a summary of the incident response plan that includes Vault logs?
+    > Response:
 
-## Reporting
+### Operational Readiness
+27. Are there comprehensive runbooks for operational tasks related to Vault?
+    > Response:
+28. What training do operations personnel undergo for managing Vault?
+    > Response:
 
-Once you have completed the assessment, compile the results to determine your current maturity level. Outline actionable steps that your organization can take to improve its maturity level.
+## Initial Hardening Assessment
 
-## Follow-Up
+### Vault Initialization and Unseal
+29. Describe the process for generating and distributing unseal keys.
+    > Response:
+30. How do you ensure the security of the unseal process?
+    > Response:
 
-We recommend scheduling a consultation to discuss your assessment results and explore personalized strategies for vault improvement. Additionally, consider enrolling in our training and education programs to enhance your team's expertise in vault management.
+### Policy as Code
+31. Explain how policies are defined as code, including the tools and languages used.
+    > Response:
+32. Detail the change management process for Vault policy-as-code.
+    > Response:
 
-[Schedule a Consultation](#)
-[Training and Education Resources](#)
+### Secrets Engines and Authentication Methods
+33. Justify the use of each enabled secrets engine.
+    > Response:
+34. Describe the security measures in place for each enabled authentication method.
+    > Response:
+
+### Network Hardening
+35. Detail all network controls in place and their configuration.
+    > Response:
+36. Explain the network segregation practices and their effectiveness.
+    > Response:
+
+### Data Protection
+37. Provide a detailed description of the encryption standards used for data at rest.
+    > Response:
+38. Describe the measures in place to detect and prevent data exfiltration.
+    > Response:
