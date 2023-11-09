@@ -1,4 +1,4 @@
-# Vault Maturity, Production Readiness, and Initial Hardening Assessment
+# Vault Maturity Assessment
 
 ## Vault Maturity Assessment
 
@@ -48,7 +48,7 @@
 18. How were performance baselines established, and how often are they reviewed?
     > Response:
 
-## Production Readiness Assessment
+## Production Observation
 
 ### Installation and Configuration
 19. How do you manage version control of Vault configuration files?
@@ -80,7 +80,7 @@
 28. What training do operations personnel undergo for managing Vault?
     > Response:
 
-## Initial Hardening Assessment
+##  Hardening Assessment
 
 ### Vault Initialization and Unseal
 29. Describe the process for generating and distributing unseal keys.
